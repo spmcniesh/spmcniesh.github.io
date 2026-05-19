@@ -1,43 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Projects - Sean McNiesh</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Projects — Sean McNiesh</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-    <header>
-        <h1>Projects</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="projects.html">Projects</a> |
-            <a href="resume.html">Resume</a> |
-            <a href="fun.html">Fun Stuff</a>
-        </nav>
-    </header>
+<body class="page">
 
-    <main>
-        <section>
-            <h2>Dynamic Programming Solver</h2>
-            <img src="Logo.png" alt="Tech Tac Toe Logo"/>
-            <p>Worked as IT Intern at Tech Tac Toe and managed 120 laptops to ensure each summer camp ran smoothly every day.</p>
-        </section>
+  <nav>
+    <a href="index.html" class="nav-logo">Sean McNiesh</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="resume.html">Résumé</a></li>
+      <li><a href="fun.html">About</a></li>
+    </ul>
+  </nav>
 
-        <section>
-            <h2>Sustainability Trivia Game</h2>
-            <img src="TriviaGame.png" alt="Question from the Trivia Game"/>
-            <p>Worked with a group to make a trivia game for the University of St. Thomas Sustainabilty Club.</p>
-        </section>
+  <div class="page-hero">
+    <p class="page-hero-eyebrow">Portfolio</p>
+    <h1>Projects &amp; Work</h1>
+    <p>A selection of software projects and research from my time at the University of St. Thomas.</p>
+  </div>
 
-        <section>
-            <h2>NBA Data Science Report</h2>
-            <img src="NBAData.png" alt="NBA Graph"/>
-            <p>This project explores how NBA player performance changes with age by analyzing 2023 season data. It highlights trends 
-                in peak performance years, the decline that follows, and position-specific aging patterns, using 
-                statistical analysis and visualizations to provide a clear, data-driven look at how careers develop 
-                over time.</p>
-        </section>
-    </main>
+  <section style="background: var(--cream); padding: 4rem 5rem;">
+    <div style="display: flex; flex-direction: column; gap: 4rem; max-width: 860px;">
+
+      <article id="workout">
+        <span class="project-tag" style="background: var(--navy); color: var(--gold-light); border: none; margin-bottom: 1rem; display: inline-block;">Full-Stack · Database Design</span>
+        <h2 style="font-family: var(--serif); font-size: 1.8rem; color: var(--text-primary); margin-bottom: 0.5rem;">Workout Tracker</h2>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">Python</span>
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">PostgreSQL</span>
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">Neon</span>
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">Render</span>
+        </div>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+          A full-stack web application developed as part of CISC 450 (Database Design) at St. Thomas.
+          Users can log exercises, track sets and reps, and view their workout history through a
+          clean web interface. The backend is built in Python with a PostgreSQL database hosted on
+          Neon, and the application is deployed and served via Render.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+          Designing the relational schema from scratch — working through entity relationships and
+          building the application around that data model — was the core challenge and learning
+          outcome of this project.
+        </p>
+        <a href="https://github.com/spmcniesh/workout-tracker" target="_blank" class="btn btn-primary" style="font-size: 0.8rem;">View on GitHub ↗</a>
+      </article>
+
+      <hr style="border: none; border-top: 1px solid var(--border);"/>
+
+      <article id="nba">
+        <span class="project-tag" style="background: var(--navy); color: var(--gold-light); border: none; margin-bottom: 1rem; display: inline-block;">Data Science · Statistical Analysis</span>
+        <h2 style="font-family: var(--serif); font-size: 1.8rem; color: var(--text-primary); margin-bottom: 0.5rem;">NBA Aging Analysis</h2>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">R</span>
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">ggplot2</span>
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">Statistics</span>
+        </div>
+        <img src="NBAData.png" alt="NBA aging analysis chart" style="width: 100%; max-width: 600px; border: 1px solid var(--border); border-radius: 2px; margin-bottom: 1.25rem; display: block;"/>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+          A data science report exploring how NBA player performance changes with age, using 2023 season
+          statistics. The analysis identifies peak performance years, the rate and shape of post-peak decline,
+          and how aging patterns differ across positions.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.8;">
+          Built using R and ggplot2, with statistical methods including regression modeling and grouped
+          aggregation to surface clear trends in a dataset spanning hundreds of player-seasons.
+        </p>
+      </article>
+
+      <hr style="border: none; border-top: 1px solid var(--border);"/>
+
+      <article id="dasc">
+        <span class="project-tag" style="background: var(--navy); color: var(--gold-light); border: none; margin-bottom: 1rem; display: inline-block;">Machine Learning · Research</span>
+        <h2 style="font-family: var(--serif); font-size: 1.8rem; color: var(--text-primary); margin-bottom: 0.5rem;">DASC 400 — Data Mining Final</h2>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">JMP</span>
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">Minitab</span>
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">Regression</span>
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">Decision Trees</span>
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">k-NN</span>
+        </div>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
+          Final research project for DASC 400 (Data Mining and Machine Learning) at the University of
+          St. Thomas, Spring 2026. Applied multiple data mining techniques — multiple linear regression,
+          decision trees, k-means clustering, and k-nearest neighbors — to a real dataset to answer
+          a defined research question.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+          Delivered as both a written research paper and a class presentation. The project required
+          not just running the models, but interpreting results rigorously and communicating findings
+          clearly to a non-specialist audience.
+        </p>
+        <a href="https://github.com/spmcniesh/dasc400-final" target="_blank" class="btn btn-primary" style="font-size: 0.8rem;">View on GitHub ↗</a>
+      </article>
+
+      <hr style="border: none; border-top: 1px solid var(--border);"/>
+
+      <article id="trivia">
+        <span class="project-tag" style="background: var(--navy); color: var(--gold-light); border: none; margin-bottom: 1rem; display: inline-block;">Web Development · Collaborative</span>
+        <h2 style="font-family: var(--serif); font-size: 1.8rem; color: var(--text-primary); margin-bottom: 0.5rem;">Sustainability Trivia Game</h2>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">JavaScript</span>
+          <span class="stack-pill" style="background: var(--navy); color: var(--gold-light);">HTML/CSS</span>
+        </div>
+        <img src="TriviaGame.png" alt="Sustainability trivia game screenshot" style="width: 100%; max-width: 600px; border: 1px solid var(--border); border-radius: 2px; margin-bottom: 1.25rem; display: block;"/>
+        <p style="color: var(--text-secondary); line-height: 1.8;">
+          A web-based trivia game built collaboratively for the University of St. Thomas Sustainability Club.
+          Players answer questions about environmental topics through an interactive browser interface.
+          Built with vanilla JavaScript, HTML, and CSS.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">Let's <em style="font-style:italic; color:var(--gold-light);">connect.</em></h2>
+    <p>Open to full-time opportunities in the Twin Cities starting summer 2026.</p>
+    <div class="contact-links">
+      <a href="mailto:spmcniesh@icloud.com" class="btn btn-primary">Email Me</a>
+      <a href="https://github.com/spmcniesh" target="_blank" class="btn btn-outline">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Sean McNiesh &nbsp;·&nbsp; Saint Paul, MN</p>
+  </footer>
+
 </body>
 </html>

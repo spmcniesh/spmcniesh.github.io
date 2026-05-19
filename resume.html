@@ -1,94 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Resume - Sean McNiesh</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Résumé — Sean McNiesh</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-    <header>
-        <h1>Resume</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="projects.html">Projects</a> |
-            <a href="resume.html">Resume</a> |
-            <a href="fun.html">Fun Stuff</a>
-        </nav>
-    </header>
+<body class="page">
 
-    <main>
-        <!-- Contact Info -->
-        <section>
-            <h2>Sean McNiesh</h2>
-            <p>
-                📞 651-605-5294 <br/>
-                ✉️ <a href="mailto:spmcniesh@icloud.com">spmcniesh@icloud.com</a> <br/>
-                🔗 <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            </p>
-        </section>
+  <nav>
+    <a href="index.html" class="nav-logo">Sean McNiesh</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html" class="active">Résumé</a></li>
+      <li><a href="fun.html">About</a></li>
+    </ul>
+  </nav>
 
-        <!-- Education -->
-        <section>
-            <h2>Education</h2>
-            <p>
-                <strong><a href="https://stthomas.edu" target="_blank">The University of St. Thomas College of Arts and Sciences</a></strong> — St. Paul, MN <br/>
-                Bachelor of Science in Computer Science, Minor in Data Science <br/>
-                <em>Anticipated May 2026</em>
-            </p>
-        </section>
+  <div class="page-hero">
+    <p class="page-hero-eyebrow">Background</p>
+    <h1>Résumé</h1>
+    <p>Computer Science senior at the University of St. Thomas. Two IT internships, Division 1 athlete, graduating May 2026.</p>
+  </div>
 
-        <!-- Job Experience -->
-        <section>
-            <h2>Job Experience</h2>
+  <div style="background: var(--cream); padding: 4rem 5rem;">
+    <div style="max-width: 800px;">
 
-            <h3>Information Technology Intern — Tech Tac Toe</h3>
-            <p><em>St. Paul, MN | May 2025 – August 2025</em></p>
-            <ul>
-                <li>Troubleshot hardware, software, and networking issues for staff and student programs.</li>
-                <li>Prepared and maintained 150 devices and systems for 20 summer STEM camps.</li>
-                <li>Gained hands-on IT experience in a fast-paced, education-focused environment.</li>
-            </ul>
+      <div style="display: flex; justify-content: flex-end; margin-bottom: 2.5rem;">
+        <a href="Sean_McNiesh_Resume.pdf" download class="btn btn-primary" style="font-size: 0.8rem;">Download PDF ↓</a>
+      </div>
 
-            <h3>Paraprofessional — South Washington County Schools</h3>
-            <p><em>Woodbury, MN | May 2024 – January 2025</em></p>
-            <ul>
-                <li>Planned and led engaging activities for 50+ children ages 6–11 daily.</li>
-                <li>Maintained an inclusive and safe learning environment.</li>
-                <li>Collaborated with youth leaders to develop and implement creative programs.</li>
-            </ul>
+      <div style="margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
+        <h2 style="font-family: var(--serif); font-size: 2rem; color: var(--text-primary); margin-bottom: 0.5rem;">Sean McNiesh</h2>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap; font-size: 0.88rem; color: var(--text-secondary);">
+          <a href="tel:6516055294" style="color: var(--text-secondary); text-decoration: none;">651-605-5294</a>
+          <a href="mailto:spmcniesh@icloud.com" style="color: var(--gold); text-decoration: none;">spmcniesh@icloud.com</a>
+          <a href="https://www.linkedin.com/in/spmcniesh" target="_blank" style="color: var(--gold); text-decoration: none;">LinkedIn</a>
+          <a href="https://github.com/spmcniesh" target="_blank" style="color: var(--gold); text-decoration: none;">GitHub</a>
+        </div>
+      </div>
 
-            <h3>Sales Associate — Twin Cities Running Company</h3>
-            <p><em>St. Paul, MN | May 2020 – January 2024</em></p>
-            <ul>
-                <li>Performed gait analysis and measurements to recommend running shoes.</li>
-                <li>Built strong customer relationships, contributing to a 20% increase in repeat visits.</li>
-                <li>Maintained inventory accuracy (+15%) through organization and monitoring.</li>
-                <li>Worked with team members to achieve sales goals while staying current on products.</li>
-            </ul>
-        </section>
+      <div class="resume-section">
+        <p class="resume-section-title">Education</p>
+        <div class="resume-entry">
+          <div class="resume-entry-header">
+            <h3>University of St. Thomas</h3>
+            <span class="date">Anticipated May 2026</span>
+          </div>
+          <span class="org">College of Arts and Sciences — St. Paul, MN</span>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">Bachelor of Science in Computer Science, Minor in Data Science</p>
+        </div>
+      </div>
 
-        <!-- Athletics -->
-        <section>
-            <h2>College Athletics</h2>
-            <p><strong>University of St. Thomas</strong> — Division 1 Cross Country & Track and Field</p>
-            <ul>
-                <li>Dedicated 20+ hours weekly to training, practices, meetings, and competition while managing full course load.</li>
-                <li><strong>2025 Cross Country Team Captain:</strong> Led practices and organized team activities.</li>
-                <li><strong>Student Athlete Advisory Committee:</strong> Advocated for student athletes with campus administration.</li>
-            </ul>
-        </section>
+      <div class="resume-section">
+        <p class="resume-section-title">Experience</p>
 
-        <!-- Skills -->
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming: Java, Python, C++, C, Linux, MIPS</li>
-                <li>Cryptography, Information Security</li>
-                <li>Data Structures, Object-Oriented Programming</li>
-                <li>R, RStudio</li>
-            </ul>
-        </section>
-    </main>
+        <div class="resume-entry">
+          <div class="resume-entry-header">
+            <h3>IT Implementation Intern</h3>
+            <span class="date">Jan 2026 – Feb 2026</span>
+          </div>
+          <span class="org">Viking Automatic Sprinkler — St. Paul, MN</span>
+          <ul>
+            <li>Supported implementation, setup, and initial configuration of new company mobile devices to streamline communication across departments.</li>
+            <li>Oversaw secure data transfer and device migration processes, ensuring accuracy and protection of company information.</li>
+            <li>Collaborated with IT staff and end users to troubleshoot setup issues and provide hands-on technical support during the transition.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-header">
+            <h3>Information Technology Intern</h3>
+            <span class="date">May 2025 – Aug 2025</span>
+          </div>
+          <span class="org">Tech Tac Toe — St. Paul, MN</span>
+          <ul>
+            <li>Provided technical support by troubleshooting hardware, software, and networking issues for staff and student programs.</li>
+            <li>Prepared and maintained 150 devices and systems to ensure smooth operation during 20 summer STEM camps.</li>
+            <li>Gained hands-on IT experience in a fast-paced, education-focused environment while supporting technology-driven learning.</li>
+          </ul>
+        </div>
+
+        <div class="resume-entry">
+          <div class="resume-entry-header">
+            <h3>Sales Associate</h3>
+            <span class="date">May 2020 – Jan 2024</span>
+          </div>
+          <span class="org">Twin Cities Running Company — St. Paul, MN</span>
+          <ul>
+            <li>Assisted customers by performing gait analysis and foot measurements for personalized running shoe recommendations.</li>
+            <li>Built strong customer relationships, contributing to a 20% increase in repeat visits and a 10% rise in positive feedback.</li>
+            <li>Maintained inventory accuracy (+15%) by restocking shelves, organizing displays, and monitoring stock levels.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <p class="resume-section-title">Athletics</p>
+        <div class="resume-entry">
+          <div class="resume-entry-header">
+            <h3>Division 1 Cross Country &amp; Track and Field Athlete</h3>
+          </div>
+          <span class="org">University of St. Thomas</span>
+          <ul>
+            <li>Dedicated 20+ hours per week to training, practices, meetings, travel, and competition while maintaining a full-time course load.</li>
+            <li>2025 Cross Country Team Captain — led daily practices and organized team activities.</li>
+            <li>Student Athlete Advisory Committee — advocated for student athletes with campus administration.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <p class="resume-section-title">Skills</p>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <p>Java, Python, C++, C, JavaScript, HTML, CSS, SQL, MIPS, Linux</p>
+          </div>
+          <div class="skill-category">
+            <h4>Web & Development</h4>
+            <p>Web Design, Web Development, Object-Oriented Programming, Data Structures</p>
+          </div>
+          <div class="skill-category">
+            <h4>Security</h4>
+            <p>Cryptography, Information Security</p>
+          </div>
+          <div class="skill-category">
+            <h4>Data & ML</h4>
+            <p>R, RStudio, Minitab, JMP, Data Mining, Machine Learning</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Sean McNiesh &nbsp;·&nbsp; Saint Paul, MN</p>
+  </footer>
+
 </body>
 </html>

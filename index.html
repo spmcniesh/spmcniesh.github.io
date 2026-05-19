@@ -1,26 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Home - Sean McNiesh</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sean McNiesh — CS & Data Science</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="projects.html">Projects</a> |
-            <a href="resume.html">Resume</a> |
-            <a href="fun.html">Fun Stuff</a>
-        </nav>
-    </header>
+<body class="page">
 
-    <main>
-        <img src="Roster.webp" alt="Photo of Sean" class="headshot"/>
-        <h2>About Me</h2>
-        <p>Hello! My name is Sean McNiesh. I’m a senior studying Computer Science at the University of St. Thomas. After college, I hope to work in software engineering , or cybersecurity, and explore opportunities in data science. I also enjoy fantasy books, video games, and cross country running.</p>
-    </main>
+  <nav>
+    <a href="index.html" class="nav-logo">Sean McNiesh</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Résumé</a></li>
+      <li><a href="fun.html">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Computer Science · Data Science</p>
+      <h1>Building things<br/>with <em>purpose.</em></h1>
+      <p class="hero-desc">
+        Senior CS student at the University of St. Thomas, graduating May 2026.
+        Division 1 athlete, team captain, and software developer focused on
+        full-stack applications and data-driven problem solving in the Twin Cities.
+      </p>
+      <div class="hero-cta">
+        <a href="projects.html" class="btn btn-primary">View Projects</a>
+        <a href="resume.html" class="btn btn-outline">View Résumé</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="Roster.webp" alt="Sean McNiesh"/>
+    </div>
+  </section>
+
+  <div class="stats-strip">
+    <div class="stat-item">
+      <span class="stat-number">4</span>
+      <span class="stat-label">Years at St. Thomas</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">D1</span>
+      <span class="stat-label">Cross Country & Track</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">2</span>
+      <span class="stat-label">IT Internships</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">10+</span>
+      <span class="stat-label">Languages & Tools</span>
+    </div>
+  </div>
+
+  <section class="about-section">
+    <p class="section-label">Background</p>
+    <h2 class="section-title">CS student. <em>Athlete. Builder.</em></h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a Computer Science major with a Data Science minor at the University of St. Thomas
+        in Saint Paul, MN. My coursework spans full-stack web development, database design,
+        machine learning, cryptography, and systems programming — with hands-on experience
+        applying these to real projects.</p>
+        <p>Outside the classroom I've interned at two IT organizations, competed as a
+        Division 1 cross country and track athlete, and served as team captain.
+        I'm pursuing software engineering, IT, and data science roles in the Twin Cities after graduation.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">R</span>
+          <span class="skill-tag">C/C++</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Linux</span>
+        </div>
+      </div>
+      <div class="about-aside">
+        <div class="aside-card">
+          <h4>Education</h4>
+          <p>B.S. Computer Science, Minor in Data Science<br/>
+          University of St. Thomas — May 2026<br/>St. Paul, MN</p>
+        </div>
+        <div class="aside-card">
+          <h4>Athletics</h4>
+          <p>Division 1 Cross Country &amp; Track and Field.
+          2025 Cross Country Team Captain.
+          Student Athlete Advisory Committee member.</p>
+        </div>
+        <div class="aside-card">
+          <h4>Currently</h4>
+          <p>Seeking full-time roles in software engineering, IT, and data science
+          in the Twin Cities metro starting summer 2026.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section">
+    <p class="section-label">Selected Work</p>
+    <h2 class="section-title" style="color:var(--cream);">Projects I've <em style="color:var(--gold-light);">built.</em></h2>
+    <div class="projects-grid">
+      <a href="projects.html#workout" class="project-card">
+        <span class="project-tag">Full-Stack · Database</span>
+        <h3>Workout Tracker</h3>
+        <p>Full-stack web app built with Python and PostgreSQL hosted on Neon, deployed via Render. Log exercises, track sets and reps, view history.</p>
+        <div class="project-footer">
+          <div class="project-stack">
+            <span class="stack-pill">Python</span>
+            <span class="stack-pill">PostgreSQL</span>
+            <span class="stack-pill">Render</span>
+          </div>
+          <span class="project-arrow">↗</span>
+        </div>
+      </a>
+      <a href="projects.html#nba" class="project-card">
+        <span class="project-tag">Data Science · R</span>
+        <h3>NBA Aging Analysis</h3>
+        <p>Statistical analysis of how NBA player performance changes with age using 2023 season data. Visualized peak years and position-specific decline patterns.</p>
+        <div class="project-footer">
+          <div class="project-stack">
+            <span class="stack-pill">R</span>
+            <span class="stack-pill">ggplot2</span>
+            <span class="stack-pill">Statistics</span>
+          </div>
+          <span class="project-arrow">↗</span>
+        </div>
+      </a>
+      <a href="projects.html#dasc" class="project-card">
+        <span class="project-tag">Machine Learning</span>
+        <h3>DASC 400 — Data Mining Final</h3>
+        <p>Applied regression, decision trees, k-means clustering, and k-NN to a real dataset. Research paper and presentation for DASC 400 at St. Thomas.</p>
+        <div class="project-footer">
+          <div class="project-stack">
+            <span class="stack-pill">JMP</span>
+            <span class="stack-pill">Minitab</span>
+            <span class="stack-pill">ML</span>
+          </div>
+          <span class="project-arrow">↗</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">Let's <em style="font-style:italic; color:var(--gold-light);">connect.</em></h2>
+    <p>Open to full-time opportunities in the Twin Cities. Always happy to talk CS, running, or anything in between.</p>
+    <div class="contact-links">
+      <a href="mailto:spmcniesh@icloud.com" class="btn btn-primary">Email Me</a>
+      <a href="https://www.linkedin.com/in/spmcniesh" target="_blank" class="btn btn-outline">LinkedIn</a>
+      <a href="https://github.com/spmcniesh" target="_blank" class="btn btn-outline">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Sean McNiesh &nbsp;·&nbsp; Saint Paul, MN</p>
+  </footer>
+
 </body>
 </html>

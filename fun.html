@@ -1,29 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Fun Stuff - Sean McNiesh</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>About — Sean McNiesh</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-    <header>
-        <h1>Fun Stuff</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="projects.html">Projects</a> |
-            <a href="resume.html">Resume</a> |
-            <a href="fun.html">Fun Stuff</a>
-        </nav>
-    </header>
+<body class="page">
 
-    <main>
-        <h2>Hobbies</h2>
-        <p>I enjoy staying active through running and outdoor activities with friends, I also spend time gaming, and reading fantasy and sci-fi books.</p>
+  <nav>
+    <a href="index.html" class="nav-logo">Sean McNiesh</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="resume.html">Résumé</a></li>
+      <li><a href="fun.html" class="active">About</a></li>
+    </ul>
+  </nav>
 
-        <h2> Photo Gallery</h2>
-        <img src="stormlightimg.jfif" alt="Fantasy books"/>
-        <img src="racing.webp" alt="Running a Race"/>
-    </main>
+  <div class="page-hero">
+    <p class="page-hero-eyebrow">Outside the Code</p>
+    <h1>About Me</h1>
+    <p>Runner, reader, gamer. What I do when I'm not writing code or studying for finals.</p>
+  </div>
+
+  <section class="interests-section">
+    <p class="section-label">Interests</p>
+    <h2 class="section-title">What I'm <em>into.</em></h2>
+
+    <div class="interests-grid">
+      <div class="interest-card">
+        <span class="interest-icon">🏃</span>
+        <h3>Distance Running</h3>
+        <p>Division 1 cross country and track athlete at St. Thomas. Competed at Roy Griak 2025 at the University of Minnesota and served as cross country team captain. Running is where I do my best thinking.</p>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">📚</span>
+        <h3>Fantasy & Sci-Fi</h3>
+        <p>Deep into epic fantasy and science fiction. Current favorites: the Stormlight Archive, Red Rising, and Dune. Always have a book going, usually something with an unreasonable page count.</p>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">🎮</span>
+        <h3>Gaming</h3>
+        <p>Competitive and casual. I play Terraria, Minecraft, Pokémon, and Valorant. Big fan of the VCT competitive scene. Have dabbled in GameMaker for my own projects.</p>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">📺</span>
+        <h3>Anime & TV</h3>
+        <p>Attack on Titan is the gold standard. Star Wars is always in rotation. I watch a lot of Twitch and keep up with the VCT circuit through the competitive Valorant scene.</p>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">🌍</span>
+        <h3>Travel</h3>
+        <p>Traveled to Zimbabwe — a trip that gave me a completely different perspective on the world. Always looking for the next place to explore.</p>
+      </div>
+      <div class="interest-card">
+        <span class="interest-icon">🏈</span>
+        <h3>Fantasy Football</h3>
+        <p>Run multiple superflex dynasty leagues. Treat it with the same analytical rigor I apply to data projects, which may or may not be a problem.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 700px;">
+      <img src="racing.webp" alt="Sean racing" style="width: 100%; border-radius: 2px; border: 1px solid var(--border); object-fit: cover; height: 260px;"/>
+      <img src="stormlightimg.jfif" alt="Stormlight Archive" style="width: 100%; border-radius: 2px; border: 1px solid var(--border); object-fit: cover; height: 260px;"/>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">Let's <em style="font-style:italic; color:var(--gold-light);">connect.</em></h2>
+    <p>Open to full-time opportunities in the Twin Cities. Always happy to talk CS, running, or anything in between.</p>
+    <div class="contact-links">
+      <a href="mailto:spmcniesh@icloud.com" class="btn btn-primary">Email Me</a>
+      <a href="https://www.linkedin.com/in/sean-mcniesh-6958b42b5/" target="_blank" class="btn btn-outline">LinkedIn</a>
+      <a href="https://github.com/spmcniesh" target="_blank" class="btn btn-outline">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Sean McNiesh &nbsp;·&nbsp; Saint Paul, MN</p>
+  </footer>
+
 </body>
 </html>
